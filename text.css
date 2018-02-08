@@ -1,0 +1,19 @@
+.titleText{
+    font-size: 70px;
+    color: #8fa6ff;
+
+}
+
+.bottomDisplay{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.96);
+}
+
+.table1 {
+    border: 1px solid #f90042;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

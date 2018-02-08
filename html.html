@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="objects.js"></script>
+    <script src="actions.js"></script>
+    <script src="data.js"></script>
+    <title>SchoolManager</title>
+    <link rel="stylesheet" type="text/css" href="text.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div id="title" class="titleText" align="center"> Classroom Manager 1.1.89</div>
+
+
+
+<div id="notification"></div>
+
+<table style="width: 100%" class="table1" align="center">
+    <tr>
+        <td align="center">Students</td>
+        <td align="center">Teachers</td>
+        <td align="center">Sections</td>
+    </tr>
+    <tr>
+        <td> <input id="sfn" type="text" class="form-control" placeholder="First Name"> <input id="sln" type="text" class="form-control" placeholder="Last Name"> <input id="sgd" type="text" class="form-control" placeholder="Grade"> </td>
+        <td><input id="tfn" type="text" class="form-control" placeholder="First Name"> <input id="tln" type="text" class="form-control" placeholder="Last Name"><input id="tsj" type="text" class="form-control" placeholder="Subject"></td>
+        <td><input id="secName" type="text" class="form-control" placeholder="Name"> <input id="secSize" type="text" class="form-control" placeholder="Maximum Size"></td>
+    </tr>
+    <tr>
+        <td align="center"><button onclick="addStudent()" class="btn btn-default" type="submit"> Add Student</button></td>
+        <td align="center"><button onclick="addTeacher()" class="btn btn-default" type="submit"> Add Teacher</button></td>
+        <td align="center"><button onclick="addSection()" class="btn btn-default" type="submit"> Add Section</button></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td align="center"><div> Select Student </div>
+            <button class="btn btn-default" type="reset" onclick="populateLists()">Refresh Select Lists</button>
+            <select id="stus">
+        </select>
+        </td>
+        <td align="center"><div> Select Teacher</div>
+            <select id="teach">
+            </select>
+        </td>
+        <td align="center"> <button type="submit" onclick="addToSection()" class="btn btn-default" > Add </button> <select id="tOrS">
+            <option value="0">Student</option>
+            <option value="1">Teacher</option> </select> To <select id="sec"></select> Section</td>
+    </tr>
+</table>
+
+<div id="divList" align="center">  <select id="selectList">
+    <option value="0">Student</option>
+    <option value="1">Teacher</option>
+    <option value="2">Section</option>
+</select>       <button class="btn btn-default" type="submit" onclick="list()"> List Items</button> </div>
+
+<div id="displayList" align="center" class="bottomDisplay"></div>
+
+
+<!--<select>-->
+    <!--<option value="0">Student</option>-->
+    <!--<option value="1">Teacher</option>-->
+    <!--<option value="2">Section</option>-->
+<!--</select>-->
+
+
+<!--<div id="createStudent"> <input id="stfn" placeholder="First Name"> <input id="stln" placeholder="Last Name"> <input id="stgd" placeholder="Grade"></div>-->
+<!--<div id="createTeach"></div>-->
+<!--<div id="creatSection"> </div>-->
+<!--<div id="display" class=""></div>-->
+</body>
+</html>
